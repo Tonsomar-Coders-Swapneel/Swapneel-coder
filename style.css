@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  background-color: whitesmoke;
+
+}.content { 
+           width: 100%;
+           height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center; 
+    }
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:center;          
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider div {
+    text-align:center;
+}
+
+.slider-text1 {
+    background-color:aqua;
+    animation: slide 3s linear infinite;
+}
+
+.slider-text2 {
+    background-color:rgb(180, 78, 38);
+}
+
+.slider-text3 {
+    background-color:rgb(157, 35, 206);
+}
+
+@keyframes slide {
+    0% {margin-top: -300px}
+    5% {margin-top: -200px}
+    33% {margin-top: -200px}
+    38% {margin-top: -100px}
+    60% {margin-top: -100px}
+    71% {margin-top: 0px}
+    100% {margin-top: 0px}
+}
